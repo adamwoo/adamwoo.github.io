@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[常用软件备忘]]></title>
+    <url>%2F2019%2F04%2F27%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[Windows1. 日常使用： - markdown 编辑器：atom，ctrl+shfit+M 实时预览，GitNote,印象笔记等 - PDF阅读器： sumatraPDF ;缺点：不能标记文档，只能阅读 - 代码编辑器：UE，打开大文件效果比较好，vscode轻量级的代码编辑器 - 影音：potplayer - 剪辑：HitFilm - ssh secureCRT - global protocol 访问校内网 - 命令行：cmder 2. 开发： - jetbrain 全系列 3. 一些trick： - 关闭windows相关服务，否则长期在后台占用磁盘和CPU，导致卡顿 - 时常记得windows防火墙是否开启，这是很多本地webserver的问题。 4. 文档编码问题： - 记事本的文档都有编码头，需要修改去掉。 Android- 浏览器：via - 微博客户端：share - 小飞机：ssr - 小米系列(温控拜拜,kernal adiutor) - ssh : juicessh - 时间管理：番茄todo - kmplayer 影音 - 快下 bt磁力下载 - GitHub ：openhub - 色魔张大妈(等等党永不为奴) - 照相机(设置：测光模式:中心权重，对比度：高，饱和度：高，锐度：标准) Linux- tree ：文件夹结构 - ss ：网络状态工具 - proxychains : 设置网络代理 - fish : shell，命令高亮，自动推荐命令(福音) - tmux ： 终端复用， - neofetch ：查理Linux系统信息 - neovim - gdebi ubuntu的软件源设计的简直了 - SMPlayer - GIMP 软件来源：- GitHub awesome list - 酷安社区：大神出没]]></content>
+      <categories>
+        <category>常用软件</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>Android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo 安装教程]]></title>
     <url>%2F2019%2F04%2F26%2F%E6%B5%8B%E8%AF%95%2F</url>
     <content type="text"><![CDATA[git配置- 注册git，新建一个名称为你的用户名+&quot;github.io&quot;的repo - 选择位置 打开git bash： 1234npm install -g hexo-clihexo init &lt;folder&gt;cd &lt;folder&gt;npm install - 把上传的git连接 写入hexo的用户配置中&quot;_config.yml&quot; - hexo g (generate) 创建静态文件 - hexo s (server) 启动hexo项目在localhost：4000端口可以查看 - hexo d (deply) 部署到github中，从用户.github.io即可访问 主题切换- ` git clone https://github.com/theme-next/hexo-theme-next` 下载主题 - 在配置文件中修改`theme: next`设置为next 主题 - 修改language 为zh-Hans - 修改动画 motion `canvas_nest: true`等等选择其中一个为true即可。 页面创建- hexo new page categories 创建新的分类 - hexo new page tags 创建新的标签页面 - 在编写markdown文档时，在文章开头加入以下部分 12345---title: hexo 安装教程categories: hexotags: [nodejs,js]--- 图标选择- `http://fontawesome.dashgame.com/` 在图标库中寻找合适的icon]]></content>
