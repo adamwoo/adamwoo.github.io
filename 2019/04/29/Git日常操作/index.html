@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Git,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="浩如烟海，亦步亦趋">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="https://adamwoo.github.io/about/index.html">
+<meta name="description" content="git 基本流程查看当前的分支git branch -a 创建新的分支git branch &amp;lt;branchname&amp;gt; 发布dev 分支git push origin dev:dev将当前的origin仓库 发布到dev 分支 切换到dev分支git checkout dev  号所表示的就是当前的分支  在dev分支上开发代码,分支合并日常在dev分支进行代码的编写,在测试代码没有什么">
+<meta name="keywords" content="Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git工程管理">
+<meta property="og:url" content="https://adamwoo.github.io/2019/04/29/Git日常操作/index.html">
 <meta property="og:site_name" content="行者的博客">
-<meta property="og:description" content="浩如烟海，亦步亦趋">
+<meta property="og:description" content="git 基本流程查看当前的分支git branch -a 创建新的分支git branch &amp;lt;branchname&amp;gt; 发布dev 分支git push origin dev:dev将当前的origin仓库 发布到dev 分支 切换到dev分支git checkout dev  号所表示的就是当前的分支  在dev分支上开发代码,分支合并日常在dev分支进行代码的编写,在测试代码没有什么">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-26T10:28:53.573Z">
+<meta property="og:updated_time" content="2019-04-29T15:36:14.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="浩如烟海，亦步亦趋">
+<meta name="twitter:title" content="Git工程管理">
+<meta name="twitter:description" content="git 基本流程查看当前的分支git branch -a 创建新的分支git branch &amp;lt;branchname&amp;gt; 发布dev 分支git push origin dev:dev将当前的origin仓库 发布到dev 分支 切换到dev分支git checkout dev  号所表示的就是当前的分支  在dev分支上开发代码,分支合并日常在dev分支进行代码的编写,在测试代码没有什么">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://adamwoo.github.io/about/">
+  <link rel="canonical" href="https://adamwoo.github.io/2019/04/29/Git日常操作/">
 
 
 
 
 
-  <title>关于 | 行者的博客</title>
+  <title>Git工程管理 | 行者的博客</title>
   
 
 
@@ -282,33 +283,208 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://adamwoo.github.io/2019/04/29/Git日常操作/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="行者">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行者的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">关于</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">Git工程管理</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-29T23:36:14+08:00">
+                2019-04-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git相关/" itemprop="url" rel="index">
+                    <span itemprop="name">Git相关</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/29/Git日常操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/04/29/Git日常操作/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="git-基本流程"><a href="#git-基本流程" class="headerlink" title="git 基本流程"></a>git 基本流程</h3><h4 id="查看当前的分支"><a href="#查看当前的分支" class="headerlink" title="查看当前的分支"></a>查看当前的分支</h4><p><code>git branch -a</code></p>
+<h4 id="创建新的分支"><a href="#创建新的分支" class="headerlink" title="创建新的分支"></a>创建新的分支</h4><p><code>git branch &lt;branchname&gt;</code></p>
+<h4 id="发布dev-分支"><a href="#发布dev-分支" class="headerlink" title="发布dev 分支"></a>发布dev 分支</h4><p><code>git push origin dev:dev</code><br>将当前的origin仓库 发布到dev 分支</p>
+<h4 id="切换到dev分支"><a href="#切换到dev分支" class="headerlink" title="切换到dev分支"></a>切换到dev分支</h4><p><code>git checkout dev</code></p>
+<ul>
+<li>号所表示的就是当前的分支</li>
+</ul>
+<h4 id="在dev分支上开发代码-分支合并"><a href="#在dev分支上开发代码-分支合并" class="headerlink" title="在dev分支上开发代码,分支合并"></a>在dev分支上开发代码,分支合并</h4><p>日常在dev分支进行代码的编写,<br>在测试代码没有什么问题之后可以把dev分支与master进行合并.</p>
+<a id="more"></a>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">//切换到master分支</span><br><span class="line">➜  getBlogVisitorNum git:(dev) git checkout master</span><br><span class="line">Switched to branch &apos;master&apos;</span><br><span class="line">Your branch is up-to-date with &apos;origin/master&apos;.</span><br><span class="line">//查看当前所在的分支</span><br><span class="line">➜  getBlogVisitorNum git:(master) git branch</span><br><span class="line">  dev</span><br><span class="line">* master</span><br><span class="line">//建议先pull 保证master分支上的工程是最新的</span><br><span class="line">➜  getBlogVisitorNum git:(master) git pull origin master</span><br><span class="line">// merge dev分支和master 分支</span><br><span class="line">//建议先git fetch查看冲突，保证冲突的解决</span><br><span class="line">//git merge 本身把公共分支和当前的commit合并形成新的commit提交</span><br><span class="line">// 不要在公共分支rebase，只在自己的dev分支rebase，建议git rebase</span><br><span class="line"></span><br><span class="line">************************************</span><br><span class="line">* merge和rebase实际上只是用的场景不一样</span><br><span class="line">* 更通俗的解释一波.</span><br><span class="line">* 比如rebase,你自己开发分支一直在做,</span><br><span class="line">* 然后某一天，你想把主线的修改合到你的分支上,做一次集成,这种情况就用rebase比较好.把你的提交都放在主线修改的头上</span><br><span class="line">* 如果用merge，脑袋上顶着一笔merge的8,你如果想回退你分支上的某个提交就很麻烦,</span><br><span class="line">* 还有一个重要的问题,rebase的话,本来我的分支是从3拉出来的,rebase完了之后,就不知道我当时是从哪儿拉出来的我的开发分支</span><br><span class="line">* 同样的,如果你在主分支上用rebase, rebase其他分支的修改,</span><br><span class="line">* 是不是要是别人想看主分支上有什么历史,他看到的就不是完整的历史课,这个历史已经被你篡改了</span><br><span class="line">************************************</span><br><span class="line"></span><br><span class="line">************************************</span><br><span class="line">* $ git checkout dev //dev分支切换</span><br><span class="line">* $ git rebase -i master //和master 分支 rebase</span><br><span class="line">* $ git checkout master //切换到master 分支</span><br><span class="line">* $ git merge dev			// merge dev 分支，并且git push</span><br><span class="line">************************************</span><br><span class="line">➜  getBlogVisitorNum git:(master) git merge dev</span><br><span class="line">Already up-to-date.</span><br><span class="line">//将合并的版本推送到远程仓库</span><br><span class="line">➜  getBlogVisitorNum git:(master) git push origin master</span><br><span class="line">Counting objects: 12, done.</span><br><span class="line">Delta compression using up to 2 threads.</span><br><span class="line">Compressing objects: 100% (7/7), done.</span><br><span class="line">Writing objects: 100% (12/12), 831 bytes | 207.00 KiB/s, done.</span><br><span class="line">Total 12 (delta 4), reused 0 (delta 0)</span><br><span class="line">   bdf94ff..2460b86  master -&gt; master</span><br><span class="line">➜  getBlogVisitorNum git:(master) git checkout dev</span><br><span class="line">Switched to branch &apos;dev&apos;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在执行rebase的时候可能会出现冲突的问题，</span><br><span class="line">此时需要手工解决冲突的问题，然后执行(git add)命令；</span><br><span class="line">所有冲突解决完之后，这时不需要执行(git commit)命令，</span><br><span class="line">而是运行(git rebase --continue)命令，一直到rebase完成；</span><br><span class="line">如果中途想放弃rebase操作，可以运行(git rebase --abort)命令回到rebase之前的状态。</span><br></pre></td></tr></table></figure>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    行者
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://adamwoo.github.io/2019/04/29/Git日常操作/" title="Git工程管理">https://adamwoo.github.io/2019/04/29/Git日常操作/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/27/常用软件/" rel="next" title="常用软件备忘">
+                <i class="fa fa-chevron-left"></i> 常用软件备忘
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -320,7 +496,7 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="about/index.html" data-title="关于" data-url="https://adamwoo.github.io/about/index.html">
+      <div class="ds-thread" data-thread-key="2019/04/29/Git日常操作/" data-title="Git工程管理" data-url="https://adamwoo.github.io/2019/04/29/Git日常操作/">
       </div>
     </div>
 
@@ -351,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -434,6 +619,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-基本流程"><span class="nav-number">1.</span> <span class="nav-text">git 基本流程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看当前的分支"><span class="nav-number">1.1.</span> <span class="nav-text">查看当前的分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建新的分支"><span class="nav-number">1.2.</span> <span class="nav-text">创建新的分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布dev-分支"><span class="nav-number">1.3.</span> <span class="nav-text">发布dev 分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#切换到dev分支"><span class="nav-number">1.4.</span> <span class="nav-text">切换到dev分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在dev分支上开发代码-分支合并"><span class="nav-number">1.5.</span> <span class="nav-text">在dev分支上开发代码,分支合并</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例子"><span class="nav-number">1.6.</span> <span class="nav-text">例子</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

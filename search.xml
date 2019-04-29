@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Git工程管理]]></title>
+    <url>%2F2019%2F04%2F29%2FGit%E6%97%A5%E5%B8%B8%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[git 基本流程查看当前的分支git branch -a 创建新的分支git branch &lt;branchname&gt; 发布dev 分支git push origin dev:dev将当前的origin仓库 发布到dev 分支 切换到dev分支git checkout dev 号所表示的就是当前的分支 在dev分支上开发代码,分支合并日常在dev分支进行代码的编写,在测试代码没有什么问题之后可以把dev分支与master进行合并. 例子1234567891011121314151617181920212223242526272829303132333435363738394041424344//切换到master分支➜ getBlogVisitorNum git:(dev) git checkout masterSwitched to branch &apos;master&apos;Your branch is up-to-date with &apos;origin/master&apos;.//查看当前所在的分支➜ getBlogVisitorNum git:(master) git branch dev* master//建议先pull 保证master分支上的工程是最新的➜ getBlogVisitorNum git:(master) git pull origin master// merge dev分支和master 分支//建议先git fetch查看冲突，保证冲突的解决//git merge 本身把公共分支和当前的commit合并形成新的commit提交// 不要在公共分支rebase，只在自己的dev分支rebase，建议git rebase************************************* merge和rebase实际上只是用的场景不一样* 更通俗的解释一波.* 比如rebase,你自己开发分支一直在做,* 然后某一天，你想把主线的修改合到你的分支上,做一次集成,这种情况就用rebase比较好.把你的提交都放在主线修改的头上* 如果用merge，脑袋上顶着一笔merge的8,你如果想回退你分支上的某个提交就很麻烦,* 还有一个重要的问题,rebase的话,本来我的分支是从3拉出来的,rebase完了之后,就不知道我当时是从哪儿拉出来的我的开发分支* 同样的,如果你在主分支上用rebase, rebase其他分支的修改,* 是不是要是别人想看主分支上有什么历史,他看到的就不是完整的历史课,这个历史已经被你篡改了************************************************************************* $ git checkout dev //dev分支切换* $ git rebase -i master //和master 分支 rebase* $ git checkout master //切换到master 分支* $ git merge dev // merge dev 分支，并且git push************************************➜ getBlogVisitorNum git:(master) git merge devAlready up-to-date.//将合并的版本推送到远程仓库➜ getBlogVisitorNum git:(master) git push origin masterCounting objects: 12, done.Delta compression using up to 2 threads.Compressing objects: 100% (7/7), done.Writing objects: 100% (12/12), 831 bytes | 207.00 KiB/s, done.Total 12 (delta 4), reused 0 (delta 0) bdf94ff..2460b86 master -&gt; master➜ getBlogVisitorNum git:(master) git checkout devSwitched to branch &apos;dev&apos; 12345在执行rebase的时候可能会出现冲突的问题，此时需要手工解决冲突的问题，然后执行(git add)命令；所有冲突解决完之后，这时不需要执行(git commit)命令，而是运行(git rebase --continue)命令，一直到rebase完成；如果中途想放弃rebase操作，可以运行(git rebase --abort)命令回到rebase之前的状态。]]></content>
+      <categories>
+        <category>Git相关</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[常用软件备忘]]></title>
     <url>%2F2019%2F04%2F27%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[Windows1. 日常使用： - markdown 编辑器：atom，ctrl+shfit+M 实时预览，GitNote,印象笔记等 - PDF阅读器： sumatraPDF ;缺点：不能标记文档，只能阅读 - 代码编辑器：UE，打开大文件效果比较好，vscode轻量级的代码编辑器 - 影音：potplayer - 剪辑：HitFilm - ssh secureCRT - global protocol 访问校内网 - 命令行：cmder 2. 开发： - jetbrain 全系列 3. 一些trick： - 关闭windows相关服务，否则长期在后台占用磁盘和CPU，导致卡顿 - 时常记得windows防火墙是否开启，这是很多本地webserver的问题。 4. 文档编码问题： - 记事本的文档都有编码头，需要修改去掉。 Android- 浏览器：via - 微博客户端：share - 小飞机：ssr - 小米系列(温控拜拜,kernal adiutor) - ssh : juicessh - 时间管理：番茄todo - kmplayer 影音 - 快下 bt磁力下载 - GitHub ：openhub - 色魔张大妈(等等党永不为奴) - 照相机(设置：测光模式:中心权重，对比度：高，饱和度：高，锐度：标准) Linux- tree ：文件夹结构 - ss ：网络状态工具 - proxychains : 设置网络代理 - fish : shell，命令高亮，自动推荐命令(福音) - tmux ： 终端复用， - neofetch ：查理Linux系统信息 - neovim - gdebi ubuntu的软件源设计的简直了 - SMPlayer - GIMP 软件来源：- GitHub awesome list - 酷安社区：大神出没]]></content>
