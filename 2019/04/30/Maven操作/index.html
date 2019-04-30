@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="nodejs,js,">
+  <meta name="keywords" content="Maven,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="git配置- 注册git，新建一个名称为你的用户名+&amp;quot;github.io&amp;quot;的repo - 选择位置 打开git bash：     1234npm install -g hexo-clihexo init &amp;lt;folder&amp;gt;cd &amp;lt;folder&amp;gt;npm install  - 把上传的git连接 写入hexo的用户配置中&amp;quot;_config.yml&amp;q">
-<meta name="keywords" content="nodejs,js">
+<meta name="description" content="maven基本命令 常用的场景 maven 的繁琐   maven基本命令 clean compile validate package deploy test verify install">
+<meta name="keywords" content="Maven">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 安装教程">
-<meta property="og:url" content="https://adamwoo.github.io/2019/04/26/测试/index.html">
+<meta property="og:title" content="Maven相关">
+<meta property="og:url" content="https://adamwoo.github.io/2019/04/30/Maven操作/index.html">
 <meta property="og:site_name" content="行者的博客">
-<meta property="og:description" content="git配置- 注册git，新建一个名称为你的用户名+&amp;quot;github.io&amp;quot;的repo - 选择位置 打开git bash：     1234npm install -g hexo-clihexo init &amp;lt;folder&amp;gt;cd &amp;lt;folder&amp;gt;npm install  - 把上传的git连接 写入hexo的用户配置中&amp;quot;_config.yml&amp;q">
+<meta property="og:description" content="maven基本命令 常用的场景 maven 的繁琐   maven基本命令 clean compile validate package deploy test verify install">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-26T09:54:38.012Z">
+<meta property="og:updated_time" content="2019-04-30T03:13:11.620Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 安装教程">
-<meta name="twitter:description" content="git配置- 注册git，新建一个名称为你的用户名+&amp;quot;github.io&amp;quot;的repo - 选择位置 打开git bash：     1234npm install -g hexo-clihexo init &amp;lt;folder&amp;gt;cd &amp;lt;folder&amp;gt;npm install  - 把上传的git连接 写入hexo的用户配置中&amp;quot;_config.yml&amp;q">
+<meta name="twitter:title" content="Maven相关">
+<meta name="twitter:description" content="maven基本命令 常用的场景 maven 的繁琐   maven基本命令 clean compile validate package deploy test verify install">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://adamwoo.github.io/2019/04/26/测试/">
+  <link rel="canonical" href="https://adamwoo.github.io/2019/04/30/Maven操作/">
 
 
 
 
 
-  <title>hexo 安装教程 | 行者的博客</title>
+  <title>Maven相关 | 行者的博客</title>
   
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://adamwoo.github.io/2019/04/26/测试/">
+    <link itemprop="mainEntityOfPage" href="https://adamwoo.github.io/2019/04/30/Maven操作/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="行者">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo 安装教程</h1>
+          <h1 class="post-title" itemprop="name headline">Maven相关</h1>
         
 
         <div class="post-meta">
@@ -330,8 +330,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T17:54:38+08:00">
-                2019-04-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T11:13:11+08:00">
+                2019-04-30
               </time>
             
 
@@ -353,8 +353,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
+                  <a href="/categories/Maven/" itemprop="url" rel="index">
+                    <span itemprop="name">Maven</span>
                   </a>
                 </span>
 
@@ -371,8 +371,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/26/测试/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/04/26/测试/" itemprop="commentCount"></span>
+                <a href="/2019/04/30/Maven操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/04/30/Maven操作/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -405,25 +405,61 @@
       
 
       
-        <h4><span id="git配置">git配置</span></h4><pre><code>- 注册git，新建一个名称为你的用户名+&quot;github.io&quot;的repo
-- 选择位置 打开git bash：
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+        <!-- toc -->
+<ul>
+<li><a href="#maven基本命令">maven基本命令</a></li>
+<li><a href="#常用的场景">常用的场景</a></li>
+<li><a href="#maven-的繁琐">maven 的繁琐</a></li>
+</ul>
+<!-- tocstop -->
+<h3><span id="maven基本命令">maven基本命令</span></h3><ul>
+<li>clean</li>
+<li>compile</li>
+<li>validate</li>
+<li>package</li>
+<li>deploy</li>
+<li>test</li>
+<li>verify</li>
+<li>install<a id="more"></a>
+<h3><span id="常用的场景">常用的场景</span></h3></li>
+</ul>
+<ol>
+<li>mvn package</li>
+</ol>
+<p>此命令包含一系列过程：validate–&gt;compile–&gt;test–&gt;package</p>
+<p>Maven根据pom文件里packaging的配置，决定是生成jar文件还是war文件，并放到target目录下。</p>
+<p>此命令需要在项目的根目录(也就是pom.xml文件所在的目录)下运行，Maven才知道打包哪个项目。</p>
+<ol start="2">
+<li>mvn clean</li>
+</ol>
+<p>每次更新项目的内容，Maven是不会自动编译更新的，所以target目录下的内容是缓存的，每次部署前都需要把最新数据更新到target目录下。</p>
+<p>当运行mvn clean后，target下的内容都会被删除，然后生成最新的数据。</p>
+<p>如果要把项目部署到生产环境，强烈建议用mvn clean package命令，确保部署的是最新的内容。</p>
+<ol start="3">
+<li>mvn test</li>
+</ol>
+<p>该命令执行后会去运行所有的单元测试，如果想要单独运行某个测试类里的单元测试，可用如下命令：mvn -Dtest=TestApp1 test</p>
+<ol start="4">
+<li>mvn clean install</li>
+</ol>
+<p>该命令会把你的项目打包并放到本地仓库，可以别人就可以引用了。</p>
+<p>此命令包含以下过程：validate–&gt;compile–&gt;test–&gt;package–&gt;integration-test–&gt;verify–&gt;install。</p>
+<p>假如你的项目的pom.xml文件如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; </span><br><span class="line">  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">  xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 </span><br><span class="line">  http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;</span><br><span class="line">  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">  &lt;groupId&gt;com.yanyd.core&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;yanyd-core&lt;/artifactId&gt;</span><br><span class="line">  &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line">  &lt;version&gt;99&lt;/version&gt;</span><br><span class="line">  &lt;name&gt;yanyd-core&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.apache.org&lt;/url&gt;</span><br><span class="line">  &lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;4.4&lt;/version&gt;</span><br><span class="line">      &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">  &lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure></p>
+<p>那么Maven就会把你的项目打包成yanyd-core-99.jar并放入本地仓库，其他开发者就可以按如下方式引用你部署的jar文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;com.yanyd.core&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;yanyd-core&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;99&lt;/version&gt;</span><br><span class="line"> &lt;/dependency&gt;</span><br></pre></td></tr></table></figure></p>
+<ol start="5">
+<li>mvn site:deploy</li>
+</ol>
+<p>该命令会把文档站点部署到服务器。</p>
+<h3><span id="maven-的繁琐">maven 的繁琐</span></h3><p>考虑将maven迁移到gradle用来管理构建生命周期<br>公式：<br>$ e=mc^2 $</p>
+<p><div id="flowchart-0" class="flow-chart"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start:start
+e=>end
+op=>operation:myoperation
+cond=>condition:Yes or No？
 
-- 把上传的git连接 写入hexo的用户配置中&quot;_config.yml&quot;
-- hexo g (generate) 创建静态文件
-- hexo s (server)   启动hexo项目在localhost：4000端口可以查看
-- hexo d (deply)    部署到github中，从用户.github.io即可访问
-</code></pre><a id="more"></a>
-<h4><span id="主题切换">主题切换</span></h4><pre><code>- ` git clone https://github.com/theme-next/hexo-theme-next` 下载主题
-- 在配置文件中修改`theme: next`设置为next 主题
-- 修改language 为zh-Hans
-- 修改动画 motion `canvas_nest: true`等等选择其中一个为true即可。
-</code></pre><h4><span id="页面创建">页面创建</span></h4><pre><code>- hexo new page categories 创建新的分类
-- hexo new page tags       创建新的标签页面
-- 在编写markdown文档时，在文章开头加入以下部分
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hexo 安装教程</span><br><span class="line">categories: hexo</span><br><span class="line">tags: [nodejs,js]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</code></pre><h4><span id="图标选择">图标选择</span></h4><pre><code>- `http://fontawesome.dashgame.com/` 在图标库中寻找合适的icon
-</code></pre>
+st->op->condi
+cond(yes)->e
+cond(no)->op</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+
       
     </div>
     
@@ -443,7 +479,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://adamwoo.github.io/2019/04/26/测试/" title="hexo 安装教程">https://adamwoo.github.io/2019/04/26/测试/</a>
+    <a href="https://adamwoo.github.io/2019/04/30/Maven操作/" title="Maven相关">https://adamwoo.github.io/2019/04/30/Maven操作/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -458,9 +494,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/nodejs/" rel="tag"><i class="fa fa-tag"></i> nodejs</a>
-          
-            <a href="/tags/js/" rel="tag"><i class="fa fa-tag"></i> js</a>
+            <a href="/tags/Maven/" rel="tag"><i class="fa fa-tag"></i> Maven</a>
           
         </div>
       
@@ -473,8 +507,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/26/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/04/29/Git日常操作/" rel="next" title="Git工程管理">
+                <i class="fa fa-chevron-left"></i> Git工程管理
               </a>
             
           </div>
@@ -482,10 +516,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/27/常用软件/" rel="prev" title="常用软件备忘">
-                常用软件备忘 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -516,7 +546,7 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="2019/04/26/测试/" data-title="hexo 安装教程" data-url="https://adamwoo.github.io/2019/04/26/测试/">
+      <div class="ds-thread" data-thread-key="2019/04/30/Maven操作/" data-title="Maven相关" data-url="https://adamwoo.github.io/2019/04/30/Maven操作/">
       </div>
     </div>
 
@@ -649,7 +679,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">git配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">主题切换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">页面创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">图标选择</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">maven基本命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">常用的场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">maven 的繁琐</span></a></li></ol></div>
             
 
           </div>
